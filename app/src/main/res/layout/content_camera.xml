@@ -33,4 +33,13 @@
         android:layout_below="@+id/camera_activity_action_button"
         android:id="@+id/camera_activity_display_bitmap"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yo !"
+        android:id="@+id/imageToText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp" />
+
 </RelativeLayout>

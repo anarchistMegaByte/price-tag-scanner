@@ -30,6 +30,7 @@ public class CameraActivity extends AppCompatActivity {
      * Button that invokes the camera to take pictures
      */
     private Button cameraButton;
+    private Button ImageToText;
     private ImageView displayImageView;
 
     @Override
@@ -57,6 +58,14 @@ public class CameraActivity extends AppCompatActivity {
             }
         });
 
+        ImageToText = (Button)findViewById(R.id.imageToText);
+        ImageToText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                convertImageToText();
+            }
+        });
+
         displayImageView = (ImageView)findViewById(R.id.camera_activity_display_bitmap);
     }
 
@@ -70,6 +79,10 @@ public class CameraActivity extends AppCompatActivity {
         }
     }
 
+    private void convertImageToText()
+    {
+
+    }
     private void dispatchTakeFullPictureIntent() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         // Ensure that there's a camera activity to handle the intent
